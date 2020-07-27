@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+      <link rel="stylesheet" href="css/style.css">
+      <link rel="stylesheet" href="css/autocomplete.css">
+      <title>Tipo de Presentación</title>
+      <script src="js/jquery-3.5.1.min.js"></script>
+   </head>
+   <body>
+      <header class="py-2 py-md-3">
+         <div class="container">
+            <div class="row">
+               <div class="col-6 col-md-4">
+                  <div class="logo">
+                     <a href="index.html"><img src="img/logo.svg" alt=""></a>
+                  </div>
+               </div>
+               <div class="col-6 col-md-8">
+                  <div class="user-icon-cell d-md-none"></div>
+                  <nav class="navbar navbar-expand-lg float-right p-0">
+                     <button class="navbar-toggler d-md-none" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                     <span class="navbar-toggler-icon">
+                     <i></i>
+                     <i></i>
+                     <i></i>
+                     </span>
+                     </button>
+                     <div class="collapse navbar-collapse d-none d-md-block" id="navbarNavDropdown">
+                        <ul class="navbar-nav menu-principal ">
+                           <li class="nav-item">
+                              <a class="nav-link px-0" href="#">SOLUCIONES</a>
+                           </li>
+                           <li class="nav-item">
+                              <a class="nav-link px-0" href="#">STAFF</a>
+                           </li>
+                           <li class="nav-item">
+                              <a class="nav-link px-0" href="#">BLOG</a>
+                           </li>
+                        </ul>
+                        <form class="form-inline form-publicar">
+                           <button class="btn btn-outline-info my-2 my-sm-0 btn-publicar" type="button">PUBLICAR UN PROYECTO</button>
+                        </form>
+                        <div class="user-picture">
+                           <img src="img/users/USER0001.jpg" alt="" class="rounded-circle">
+                        </div>
+                     </div>
+                  </nav>
+               </div>
+            </div>
+         </div>
+      </header>
+      <div class="contenido py-3 py-md-5">
+         <div class="container py-md-5">
+            <div class="row">
+               <div class="col-md-3 mb-3 mb-md-5 mb-md-0">
+                  <div class="estado-btn bg-tb rounded-circle">4/4</div>
+                  <div class="estado titulo">TIPO DE PRESTACIÓN</div>
+               </div>
+               <div class="col-md-9">
+                  <h1>Define la modalidad de atención profesional</h1>
+                  <form action="" onsubmit="return Guardar('resumen.html');">
+                     <input type="hidden" name="categorySelect" id="categorySelect">
+                     <div class="row">
+                        <div class="col-12 form-descripcion my-2 my-md-4">Elige con quién quieres resolver el trabajo:</div>
+                        <div class="col-md-3 item-card">
+                           <div class="item-card-body item-resolver d-flex align-items-center bg-view" id="profesional">
+                              <span><i class="fas fa-user fa-2x fa-color"></i><br>Un profesional<br>individual</span>
+                           </div>
+                        </div>
+                        <div class="col-md-3 item-card">
+                           <div class="item-card-body item-resolver d-flex align-items-center bg-view" id="project">
+                              <span><i class="fas fa-users fa-2x fa-color"></i><br>Project manager<br>y equipo</span>
+                           </div>
+                        </div>
+                        <div class="col-md-3 item-card">
+                           <div class="item-card-body item-resolver d-flex align-items-center bg-view" id="ciudad">
+                              <span><i class="fas fa-map-marker-alt fa-2x fa-color"></i><br>Rombus Ciudad /<br>cercana a mi ubicación</span>
+                           </div>
+                        </div>
+                        <div class="col-md-3 item-card">
+                           <div class="item-card-body item-resolver d-flex align-items-center bg-view" id="corporativa">
+                              <span><i class="fas fa-building  fa-2x fa-color"></i><br>Rombus Central /<br>atención corporativa</span>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="row d-none view_profesional views">
+                        <div class="col-12 form-descripcion my-4">Selecciona el nivel de experiencia</div>
+                        <div class="col-12 mb-4">
+                           Inicial » talentos que transitan sus primeros años.<br>
+                           Medio » ya cuentan con experiencia comprobable.<br>
+                           Experto » poseen total dominio en la materia.<br>
+                        </div>
+                        <div class="col-md-4 item-card">
+                           <div class="item-card-body item-experiencia d-flex align-items-center bg-view" id="inicial">
+                              <span>Inicial<br>$</span>
+                           </div>
+                        </div>
+                        <div class="col-md-4 item-card">
+                           <div class="item-card-body item-experiencia d-flex align-items-center bg-view" id="medio">
+                              <span>Medio<br>$$</span>
+                           </div>
+                        </div>
+                        <div class="col-md-4 item-card">
+                           <div class="item-card-body item-experiencia d-flex align-items-center bg-view" id="ciudad">
+                              <span>Experto<br>$$$</span>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="row d-none view_project views">
+                        <div class="col-12 form-descripcion my-4">Designaremos un Project Manager</div>
+                        <div class="col-12 mb-4">Quien se encargará de atender el caso, coordinar el proceso y dirigir el trabajo del equipo profesional.
+                        </div>
+                     </div>
+                     <div class="row d-none view_corporativa views">
+                        <div class="col-6  my-4">
+                           <div class="row">
+                              <div class="col-12 form-descripcion">Atención localizada</div>
+                              <div class="col-12 mb-4">Un Profesional de Rombus, cercano en tu localidad, se contactará para atender y gestionar personalmente las necesidades del proyecto.</div>
+                           </div>
+                        </div>
+                        <div class="col-6  my-4">
+                           <div class="row inputs-ciudad">
+                              <div class="col-6">
+                                 <input type="text" class="form-control" placeholder="Juan Carlos">
+                              </div>
+                              <div class="col-6">
+                                 <input type="text" class="form-control" placeholder="Pepe">
+                              </div>
+                              <div class="col-6">
+                                 <input type="text" class="form-control" placeholder="juanpepe@empresa.com">
+                              </div>
+                              <div class="col-6">
+                                 <input type="text" class="form-control" placeholder="Whatsapp">
+                              </div>
+                              <div class="col-6">
+                                 <input type="text" class="form-control" placeholder="Ciudad">
+                              </div>
+                              <div class="col-6">
+                                 <input type="text" class="form-control" placeholder="País">
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="row d-none view_ciudad views">
+                        <div class="col-6  my-4">
+                           <div class="row">
+                              <div class="col-12 form-descripcion">Atención central</div>
+                              <div class="col-12 mb-4">Desde el área directiva de Rombus brindamos atención directa e integral para proyectos corporativos. Déjanos tus datos y te contactaremos de inmediato.</div>
+                           </div>
+                        </div>
+                        <div class="col-6  my-4">
+                           <div class="row inputs-ciudad">
+                              <div class="col-6">
+                                 <input type="text" class="form-control" placeholder="Juan Carlos">
+                              </div>
+                              <div class="col-6">
+                                 <input type="text" class="form-control" placeholder="Pepe">
+                              </div>
+                              <div class="col-6">
+                                 <input type="text" class="form-control" placeholder="juanpepe@empresa.com">
+                              </div>
+                              <div class="col-6">
+                                 <input type="text" class="form-control" placeholder="Whatsapp">
+                              </div>
+                              <div class="col-6">
+                                 <input type="text" class="form-control" placeholder="Ciudad">
+                              </div>
+                              <div class="col-6">
+                                 <input type="text" class="form-control" placeholder="País">
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="row d-none view_tipo">
+                        <div class="col-12 form-descripcion my-4">Tipo de proyecto:</div>
+                        <div class="col-md-4 item-card">
+                           <div class="item-card-body item-tipo d-flex align-items-center bg-view" id="inicial">
+                              <span><i class="fas fa-file-alt  fa-2x fa-color"></i><br>Proyecto único,<br>empieza y termina una sola vez</span>
+                           </div>
+                        </div>
+                        <div class="col-md-4 item-card">
+                           <div class="item-card-body item-tipo d-flex align-items-center bg-view" id="medio">
+                              <span><i class="fas fa-calendar-check  fa-2x fa-color"></i><br>Proyecto recurrente,<br>se repite según plazo estimado</span>
+                           </div>
+                        </div>
+                        <div class="col-md-4 item-card">
+                           <div class="item-card-body item-tipo d-flex align-items-center bg-view" id="ciudad">
+                              <span><i class="fas fa-question-circle  fa-2x fa-color"></i><br>No lo sé aún,<br>lo definiré luego</span>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="row d-none view_final_project views" tipo="">
+                        <div class="col-12 form-descripcion my-4">Plazo estimado:</div>
+                        <div class="col-12 mb-4">Indica el tiempo aproximado en el que necesitarás que se repita tu proyecto. Luego podrás precisarlo o revisarlo con mayor exactitud.</div>
+                        <div class="col-md-4 item-card">
+                           <div class="item-card-body item-experiencia d-flex align-items-center bg-view" id="inicial">
+                              <span>1 a 7 días</span>
+                           </div>
+                        </div>
+                        <div class="col-md-4 item-card">
+                           <div class="item-card-body item-experiencia d-flex align-items-center bg-view" id="medio">
+                              <span>8 a 30 días</span>
+                           </div>
+                        </div>
+                        <div class="col-md-4 item-card">
+                           <div class="item-card-body item-experiencia d-flex align-items-center bg-view" id="ciudad">
+                              <span>Más de 30 días</span>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="row d-none view_final views">
+                        <div class="col-10 offset-2 col-md-4 offset-md-8">
+                           <div class="form-group my-4">
+                              <label for="sugerido">Rango de precios sugerido</label>
+                              <div class="ginfo">
+                                 <i class="info" data-toggle="tooltip" data-placement="top" title="Si colocas un valor dentro del rango de precio sugerido,  aumentarás la cantidad y calidad de las propuestas">?</i>                                    
+                                 <input name="sugerido" type="text" class="form-control" value="$ 1000/2000" disabled>
+                              </div>
+                           </div>
+                           <div class="form-group my-4">
+                              <label for="sugerido">Rango de precios sugerido</label>
+                              <input name="sugerido" type="text" class="form-control" value="$ 1500">
+                           </div>
+                           <div class="form-group mt-5">
+                              <button class="btn btn-submit bg-tb float-right w-100">¡Terminado Ir a Resumen!</button>
+                           </div>
+                        </div>
+                     </div>
+                  </form>
+               </div>
+            </div>
+         </div>
+      </div>
+      <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+      <script>
+         $(document).ready(function(){
+             $('.item-resolver').click(function(){
+                 var getID = $(this).attr('id');
+                 $('.active').removeClass('active');
+                 $(this).addClass('active');
+                 $('.views').addClass('d-none');
+                 $('.view_'+getID).removeClass('d-none');
+                 $('.item-tipo').removeClass('active');
+                 $('.view_tipo .item-tipo').attr('tipo',getID);
+                 if(getID==='project'){
+                     $('.view_tipo').removeClass('d-none');  
+                     $('.view_project').removeClass('d-none');
+                 }else{
+                     $('.view_tipo').addClass('d-none');
+                     $('.view_project').addClass('d-none');
+                 }
+                 if(getID==='ciudad' || getID==='corporativa'){
+                     $('.view_final').removeClass('d-none');
+                 }
+             });
+             $('.item-experiencia').click(function(){
+                 var getID = $(this).attr('id');
+                 $('.item-experiencia').removeClass('active');
+                 $(this).addClass('active');
+                 $('.view_tipo').removeClass('d-none');
+             });
+             $('.item-tipo').click(function(){
+                 var getID = $(this).attr('id');
+                 var getTipo = $(this).attr('tipo');
+                 if(getTipo==='project'){
+                     $('.view_final_project').removeClass('d-none');
+                 }
+                 $('.item-tipo').removeClass('active');
+                 $(this).addClass('active');
+                 $('.view_final').removeClass('d-none');                
+             });
+         });
+      </script>
+      <script>
+         function Guardar(web_url){
+             document.location.href = web_url;
+             return false;
+         }
+      </script>
+   </body>
+</html>
